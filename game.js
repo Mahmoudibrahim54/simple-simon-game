@@ -26,6 +26,14 @@ $(document).keydown(function() {
   }
 })
 
+$(document).on("touchstart", function() {
+  if (gameStartingKey === true) {
+    gameOn = true;
+    nextSequenceStep();
+    gameStartingKey = false;
+  }
+});
+
 $(".btn").on("click", function(event) {
   if (gameOn === true) {
     var userChosenColor = event.target.id;
@@ -36,6 +44,20 @@ $(".btn").on("click", function(event) {
 
   }
 });
+
+
+$(".btn").on("touchstart", function(event) {
+  if (gameOn === true) {
+    var userChosenColor = event.target.id;
+    userClickedPattern.push(userChosenColor);
+    playSound(userChosenColor);
+    animatePressed(userChosenColor);
+    checkAnswer(userClickedPattern.length - 1);
+
+  }
+});
+
+
 
 
 function checkAnswer(stepIndex) {
