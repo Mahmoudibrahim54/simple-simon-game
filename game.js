@@ -34,7 +34,12 @@ $(document).on("touchstart", function() {
   }
 });
 
-$(".btn").on("click", function(event) {
+
+$(".btn").on("click",onAction);
+$(".btn").on("touchstart",onAction);
+
+
+function onAction(event){
   if (gameOn === true) {
     var userChosenColor = event.target.id;
     userClickedPattern.push(userChosenColor);
@@ -43,22 +48,8 @@ $(".btn").on("click", function(event) {
     checkAnswer(userClickedPattern.length - 1);
 
   }
-});
 
-
-$(".btn").on("touchstart", function(event) {
-  if (gameOn === true) {
-    var userChosenColor = event.target.id;
-    userClickedPattern.push(userChosenColor);
-    playSound(userChosenColor);
-    animatePressed(userChosenColor);
-    checkAnswer(userClickedPattern.length - 1);
-
-  }
-});
-
-
-
+}
 
 function checkAnswer(stepIndex) {
 
