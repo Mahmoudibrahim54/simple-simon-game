@@ -1,8 +1,10 @@
+
+var buttonColors = ["red", "blue", "green", "yellow"];
+
 var userClickedPattern = [];
 
 var gamePattern = [];
 
-var buttonColors = ["red", "blue", "green", "yellow"];
 
 
 var randomChoosenColor;
@@ -46,7 +48,7 @@ function checkAnswer(stepIndex) {
       $("body").removeClass("game-over");
     }, 100)
     var sound = document.createElement("audio");
-    sound.setAttribute("src", "sounds/wrong.mp3")
+    sound.setAttribute("src", "wrong.mp3")
     sound.play();
     startOver();
   }
@@ -83,7 +85,7 @@ function nextSequenceStep() {
 
 function playSound(color) {
   var sound = document.createElement("audio");
-  sound.setAttribute("src", "sounds/" + color + ".mp3")
+  sound.setAttribute("src", color + ".mp3")
   sound.play();
 }
 
