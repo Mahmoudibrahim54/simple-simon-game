@@ -1,0 +1,181 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat-Black', sans-serif;
+
+}
+
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+/* headings */
+
+
+
+.heading-txt{
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #fff;
+
+}
+
+/* sections */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.colored-section{
+  background-color: #ff4c68;
+  color: #fff;
+
+}
+.white-section{
+  background-color: #fff;
+}
+
+
+/* title section */
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat-light';
+  font-size: 1.2rem;
+}
+
+/* download button */
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.mob-img {
+  width: 60%;
+  transform: rotate(25deg);
+  margin: 3% auto;
+  position: absolute;
+  right: 30%;
+}
+
+/* second section */
+#features {
+  position: relative;
+
+}
+
+.features-text{
+  padding: 3%;
+  font-family: 'Montserrat-bold';
+}
+.features-specs{
+font-size: 1.3rem;
+}
+
+
+/* second section images */
+.icon {
+  color: #ef8172;
+font-size: 5rem;
+padding: 5px;
+
+
+}
+.icon:hover{
+  color: #ff4c68;
+}
+
+/* testimonials section */
+
+#testimonials{
+  background-color: #ef8172;
+
+
+}
+
+.testimonial-img {
+  width: 10%;
+  margin: 20px;
+  border-radius: 100%;
+}
+.carousel-item{
+  padding: 7% 15%;
+
+  }
+  .testimonial-txt {
+    font-size: 3rem;
+    line-height: 1.5;
+
+  }
+
+/* press section */
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+
+/* pricing section */
+
+.pricing-grid{
+padding: 3% 2%;
+}
+.price{
+  font-size: 3rem;
+  line-height: 1.5;
+
+}
+
+/* call to action */
+
+
+/* footer section */
+
+.social-icon {
+  margin: 10px 15px;
+}
+.footer-txt{
+  font-size: 70%;
+  margin: 20px;
+
+}
+
+@media (max-width: 1028px){
+
+  .mob-img{
+    position: static;
+    transform: rotate(0);
+  }
+
+  #title{
+    text-align: center;
+  }
+
+}
